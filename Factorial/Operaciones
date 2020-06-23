@@ -1,0 +1,19 @@
+package factorial;
+
+/**
+ *
+ * @author Sisalema-Santiago
+ */
+public class Factorial {      // Creamos una clase llamada Factorial 
+
+   public static int factorialNumero(int numero){ //Creamos un método llamado factorialNumero como parametro un numero entero y valor de retorno un int
+     int bandera; //Creamos una variable bandera para que almacene las operaciones que se encuentran mas adelante
+     if(numero<2){
+           return 1; //Creamos una sentencia condicional para verificar que si un numero es menor a 2 devolvera el valor 1
+                     //Ya que al valor de 0 , 1 nos da el valor 1, y a valores negativos no podemos obtener su factorial
+       }else{
+           bandera= numero*factorialNumero(numero-1);  //Almacenamos en la variable bandera las operacion de numero por el metodo numero-1
+       }                                               //Aqui estamos aplicando recursividad
+       return bandera;        //devolvemos la variable bandera 
+   }     
+   }
