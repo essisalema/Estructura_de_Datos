@@ -1,0 +1,15 @@
+ */
+package factorial;
+
+/**
+ *
+ * @author Sisalema-Santiago
+ */
+public class vistaFactorial {     //Creamos una clase VistaFactorial para imprimir nuestro Programa
+    public static void main (String[]args){
+    Factorial resultado = new Factorial();  //Creamos un objeto de nombre (resultado) de tipo Factorial para llamar a nuestro método estatico
+    System.out.println("El resultado del factorial es: "+ resultado.factorialNumero(5)); // Llamamos a nuestro método estatico (fctorialNumero)
+                                                                                          //que tiene como parametro cualquier numero que deseemos 
+    }
+    
+}
